@@ -11,7 +11,7 @@ export type Project = {
   demo?: string
 }
 
-export const projects: Project[] = [
+export const projectsEn: Project[] = [
   {
     slug: "fithub",
     title: "FitHub Gym",
@@ -77,3 +77,28 @@ export const projects: Project[] = [
     ],
   },
 ]
+
+export const projectsPt: Project[] = [
+  {
+    ...projectsEn[0],
+    category: "Desenvolvimento Web Full-Stack",
+    description: "Plataforma de gestão de ginásios com planos de adesão, aulas, equipamentos e funcionalidades administrativas.",
+    contribution: "Projeto universitário em grupo. Contribuí para os planos de adesão, o sistema de reservas e o controlo de acessos.",
+    features: ["Gestão de adesões com três planos", "Horários e reservas de aulas", "Painel de administração", "Informações sobre equipamentos e treinadores"],
+  },
+  {
+    ...projectsEn[1],
+    category: "Aplicação Móvel",
+    description: "Marketplace móvel onde estudantes podem procurar, comprar e vender artigos em segunda mão.",
+    contribution: "Projeto universitário em grupo. Contribuí para as mensagens, listas de favoritos e funcionalidades da aplicação.",
+    features: ["Pesquisa e publicação de anúncios", "Detalhes dos artigos e perfis de vendedores", "Mensagens diretas entre utilizadores", "Favoritos e criação de anúncios"],
+  },
+  {
+    ...projectsEn[2],
+    category: "Desenvolvimento de Jogos",
+    description: "Jogo de ritmo inspirado em Guitar Hero, desenvolvido em C no ambiente MINIX.",
+    contribution: "Projeto universitário em grupo. Trabalhei na leitura do teclado, deteção de notas, pontuação e integração de áudio.",
+    features: ["Jogo de ritmo com cinco pistas", "Deteção de notas através do teclado", "Pontuação baseada em sequências de acertos", "Feedback áudio e estados de jogo"],
+  },
+]
+export const projects = projectsEn
